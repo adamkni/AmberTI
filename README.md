@@ -317,4 +317,6 @@ maxcyc=100
 ntwx=DELETE
 &end
 ```
-
+## References
+Weighted_cc was adopted from following article:
+Li, Yishui & Liu, Runduo & Liu, Jie & Luo, Haibin & Wu, Chengkun & Li, Zhe. An Open Source Graph-Based Weighted Cycle Closure Method for Relative Binding Free Energy Calculations. Journal of Chemical Information and Modeling. 2023, 63, 2, 561–570
