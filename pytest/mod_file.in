@@ -1,0 +1,14 @@
+ti1p1
+01_min
+iwrap=2
+cut=10.0
+maxcyc=100
+&end
+02_min
+maxcyc=100
+iwrap=2
+&end
+ti2p1
+maxcyc=100
+ntwx=DELETE
+&end

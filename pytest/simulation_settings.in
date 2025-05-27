@@ -1,0 +1,28 @@
+GPU_setting="#SBATCH --partition=compchemq
+#SBATCH --qos=compchem
+#SBATCH --account=compchem_acc
+#SBATCH --mem=40g
+#SBATCH -N1 --ntasks-per-node=1
+#SBATCH --cpus-per-task=1
+#SBATCH --ntasks-per-socket=1
+#SBATCH --gres=gpu:1
+#SBATCH --exclude=compchem001
+
+module purge
+module load amber-uon/cuda11/20bectgtx-eb-GCCcore-10.2.0"
+
+CPU_setting="#SBATCH --partition=shortq
+#SBATCH --mem=40g
+#SBATCH -N1 --ntasks-per-node=1
+#SBATCH --cpus-per-task=40
+#SBATCH --ntasks-per-socket=1
+
+module purge
+module load amber-uon/intelmpi2019/20volta"
+
+environment="module load anaconda-uon/3
+source activate alchem"
+
+home_pathway="C:/Users/knirs/PycharmProjects/amberti_clone/pytest"
+max_GPUs="15"
+max_CPUs="14"
