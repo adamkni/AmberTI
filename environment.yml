@@ -1,0 +1,33 @@
+# To set up a development environment using conda run:
+#
+#   conda env create -f environment.yml
+#   conda activate mpl-dev
+#   pip install -e .
+#
+name: amberti-dev
+channels:
+  - conda-forge
+dependencies:
+  # dependencies
+  - decimal
+  - numpy
+  - csv
+  - copy
+  - optparse
+  - argparse
+  - pandas
+  - alchemlyb
+  - sqlite3
+  - pathlib
+  - pickle
+  - lomap2
+  - rdkit
+  - ast
+  - textwrap
+  - matplotlib
+  - openbabel
+  # testing
+  - unittest
+  - coverage
+  - pytest
+  - pytest-cov
